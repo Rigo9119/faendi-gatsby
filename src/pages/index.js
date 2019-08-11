@@ -1,20 +1,30 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
+import Hero from "../components/hero"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+const IndexPage = (props) => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <SEO title="Faendi" />
+    <Hero 
+      title={'TRANSFORMA TU NEGOCIO Y DIGITALIZA TU EMPRESA'}
+      subtitle={'Un nuevo aliado para ayudarte en el proceso de transformación digital'}
+      description={
+        'Somos una agencia digital con sede en Bogotá, prestamos servicios a toda Colombia. Nuestra especialidad es el desarrollo web y estrategias de marketing digital, nuestra búsqueda es visibilizar tu marca para superar tus objetivos de negocio.'
+      }
+      video={'https://youtu.be/Rvvsw21PgIk'}
+    />
+    <Hero 
+      title={'TRANSFORMA TU NEGOCIO Y DIGITALIZA TU EMPRESA'}
+      subtitle={'Un nuevo aliado para ayudarte en el proceso de transformación digital'}
+      description={
+        'Somos una agencia digital con sede en Bogotá, prestamos servicios a toda Colombia. Nuestra especialidad es el desarrollo web y estrategias de marketing digital, nuestra búsqueda es visibilizar tu marca para superar tus objetivos de negocio.'
+      }
+      img={Image}
+      link={'ver mas'}
+    />
   </Layout>
 )
 
