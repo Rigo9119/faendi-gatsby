@@ -8,8 +8,8 @@ import Form from "../components/form"
 
 const Wrapper = styled.div`
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
   align-items: center;
   height: 100vh;
   width: 100vw;

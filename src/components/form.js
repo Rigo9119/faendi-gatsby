@@ -11,7 +11,7 @@ const Wrapper = styled.form `
   justify-content: center;
   align-items: center;
   padding-right: 2%;
-  width: 45%;
+  width: 50%;
 `;
 
 // hacer refactor del nav  - componente aparte 
