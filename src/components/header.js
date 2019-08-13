@@ -1,10 +1,10 @@
-import Link from "gatsby-link";
-import PropTypes from "prop-types";
 import React from "react";
 import styled from "styled-components";
 
+import Nav from "./header/nav";
+import Logo from "./header/logo";
+
 const StyledHeader = styled.header `
-  background: crimson;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
@@ -14,59 +14,18 @@ const StyledHeader = styled.header `
   z-index: 2;
 `;
 
-const LogoContainer = styled.div`
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;  
-  width: 40%;
-`;
-
-const Logo = styled.img`
-  width: 95%;
-`;
-
-const Menu = styled.nav`
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
-  width: 60%;
-`;
-
-const StyledLink = styled(Link)`
-  color: white;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 1.8rem;
-  text-decoration: none;
-  width: 15%;
-`;
 // hacer refactor del nav  - componente aparte 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <StyledHeader>
-    <LogoContainer>
-      <Logo />
-    </LogoContainer>
-    <Menu>
-      <StyledLink to="/index/">
-        {'Home'}
-      </StyledLink>
-      <StyledLink to="/nosotros/">
-        {'Nosotros'}
-      </StyledLink>
-      <StyledLink to="/contacto/">
-        {'Contacto'}
-      </StyledLink>
-    </Menu>
+    <Logo 
+      src={'../images/faendi-logo.png'}
+    />
+    <Nav 
+      home={'Home'}
+      us={'Nosotros'}
+      contact={'Contacto'}
+    />
   </StyledHeader>
 )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
+export default Header;

@@ -8,7 +8,7 @@ const NosotrosPage = (props) => (
   <Layout>
     <SEO title="Faendi" />
       <h2>Hacer Formulario</h2>
-    </Layout>
+  </Layout>
 )
 
 export default NosotrosPage
