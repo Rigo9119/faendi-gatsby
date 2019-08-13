@@ -3,8 +3,10 @@ import styled from "styled-components";
 
 import Nav from "./header/nav";
 import Logo from "./header/logo";
+import FaendiLogo from "../images/faendi-logo.png";
 
 const StyledHeader = styled.header `
+  display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
@@ -18,11 +20,13 @@ const StyledHeader = styled.header `
 const Header = () => (
   <StyledHeader>
     <Logo 
-      src={'../images/faendi-logo.png'}
+      src={FaendiLogo}
     />
     <Nav 
       home={'Home'}
       us={'Nosotros'}
+      services={'Servicios'}
+      clients={'Clientes'}
       contact={'Contacto'}
     />
   </StyledHeader>

@@ -9,7 +9,7 @@ const Wrapper = styled.nav`
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: end;
-  width: 10%;
+  width: 12%;
 `;
 
 const StyledLink = styled(Link)`
@@ -24,13 +24,19 @@ const StyledLink = styled(Link)`
 TODO 
 add the clients and services links
  */
-const Nav = ({home, us, contact}) => (
+const Nav = ({home, us, contact, services, clients}) => (
     <Wrapper>
       <StyledLink to="/">
         {home}
       </StyledLink>
       <StyledLink to="/nosotros/">
         {us}
+      </StyledLink>
+      <StyledLink to="/servicios/">
+        {services}
+      </StyledLink>
+      <StyledLink to="/clientes/">
+        {clients}
       </StyledLink>
       <StyledLink to="/contacto/">
         {contact}
