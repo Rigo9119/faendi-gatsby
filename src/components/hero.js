@@ -4,46 +4,31 @@ import styled from "styled-components";
 import HeroContent from "./hero/heroContent";
 
 const Wrapper = styled.div`
-  background: url(${props => props.img_src});
-  background-size: cover;
   height: 100vh;
   position: relative;
-  width: 100vh; 
+  width: 100vw; 
 `;
 
-const Video = styled.video`
-  bottom: 0;
-  min-height: 100%;
-  min-width: 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
-`;
 
-const Hero = ({title, subtitle, description, video, link, img_src}) => {
-  //dividir Hero en dos componentes Backgorund y Content
+const Hero = ({title_h1, title,subtitle, description, to, link, nav, to_one, to_two, to_three, to_four, link_one, link_two, link_three, link_four}) => {
   return (
-    <Wrapper img_src={img_src}>
-    {video ? 
-      <Video
-        autoPlay="autoplay"
-        playsInline
-        muted="muted"
-        loop="loop"
-      >
-        <source 
-          src={video}
-          type="video/mp4"
-        />
-      </Video> 
-      :
-      null}
-
+    <Wrapper>
       <HeroContent 
+        title_h1={title_h1}
         title={title}
         subtitle={subtitle}
         description={description}
         link={link}
+        to={to}
+        nav={nav}
+        to_one={to_one}
+        link_one={link_one}
+        to_two={to_two}
+        link_two={link_two}
+        to_three={to_three}
+        link_three={link_three}
+        to_four={to_four}
+        link_four={link_four}
       />
     </Wrapper>
   )

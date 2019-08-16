@@ -35,9 +35,11 @@ const Nav = ({home, us, contact, services, clients}) => (
       <StyledLink to="/servicios/">
         {services}
       </StyledLink>
+{/*   
       <StyledLink to="/clientes/">
         {clients}
-      </StyledLink>
+      </StyledLink> 
+*/}
       <StyledLink to="/contacto/">
         {contact}
       </StyledLink>

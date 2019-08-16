@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import Nav from "./header/nav";
 import Logo from "./header/logo";
-import FaendiLogo from "../images/faendi-logo.png";
+import FaendiLogo from "../images/faendi-transparent-dark.png";
 
 const StyledHeader = styled.header `
   display: flex;
@@ -26,7 +26,7 @@ const Header = () => (
       home={'Home'}
       us={'Nosotros'}
       services={'Servicios'}
-      clients={'Clientes'}
+      //clients={'Clientes'}
       contact={'Contacto'}
     />
   </StyledHeader>
