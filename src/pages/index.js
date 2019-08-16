@@ -2,28 +2,42 @@ import React from "react"
 
 import Layout from "../components/layout"
 import Hero from "../components/hero"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = (props) => (
   <Layout>
-    <SEO title="Faendi" />
+    <SEO title="Agencia Digital Bogotá" />
     <Hero 
-      title={'TRANSFORMA TU NEGOCIO Y DIGITALIZA TU EMPRESA'}
+      title_h1={'TRANSFORMA TU NEGOCIO Y DIGITALIZA TU EMPRESA'}
       subtitle={'Un nuevo aliado para ayudarte en el proceso de transformación digital'}
       description={
-        'Somos una agencia digital con sede en Bogotá, prestamos servicios a toda Colombia. Nuestra especialidad es el desarrollo web y estrategias de marketing digital, nuestra búsqueda es visibilizar tu marca para superar tus objetivos de negocio.'
+        'Somos una agencia digital con sede en Bogotá, prestamos servicios a toda Colombia. Nuestra especialidad es el desarrollo web y estrategias de marketing digital, nuestra búsqueda es visibilizar tu marca para superar tus objetivos de negocio'
       }
-      video={'https://youtu.be/Rvvsw21PgIk'}
+      link={'Ver más'}
+      to={'/nosotros/'}
     />
     <Hero 
-      title={'TRANSFORMA TU NEGOCIO Y DIGITALIZA TU EMPRESA'}
+      title={'LA IMPORTANCIA DE TENER EL ALIADO IDEAL'}
+      subtitle={'Tenemos la capacidad de adaptarnos a las necesidades de tu negocio'}
+      description={
+        'En Faendi contamos con profesionales altamente experimentados en la industria. Hemos tenido la oportunidad de trabajar con marcas reconocidas a nivel mundial y queremos poner esa experiencia a disposición de las compañías que están en proceso de digitalización y que requieren de un aliado para sus estrategias de marketing'
+      }
+    />
+    <Hero 
+      title={'DISEÑO WEB Y MARKETING DIGITAL'}
       subtitle={'Un nuevo aliado para ayudarte en el proceso de transformación digital'}
       description={
-        'Somos una agencia digital con sede en Bogotá, prestamos servicios a toda Colombia. Nuestra especialidad es el desarrollo web y estrategias de marketing digital, nuestra búsqueda es visibilizar tu marca para superar tus objetivos de negocio.'
+        'Desarrollamos productos digitales como páginas web y aplicaciones móviles, enfocados en satisfacer las necesidades comerciales de nuestros clientes en los mercados nacionales e internacionales, asegurando un trabajo de calidad'
       }
-      img={Image}
-      link={'ver mas'}
+      nav
+      link_one={'Diseño de Páginas Web'}
+      to_one={'/servicios/'}
+      link_two={'SEO - Posicionamiento en buscadores'}
+      to_two={'/servicios/'}
+      link_three={'Tienda Virtual eCommerce'}
+      to_three={'/servicios/'}
+      link_four={'Infografías Digitales'}
+      to_four={'/servicios/'}
     />
   </Layout>
 )

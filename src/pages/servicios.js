@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 const NosotrosPage = (props) => (
   <Layout>
-    <SEO title="Faendi" />
+    <SEO title="Marketing Digital y Diseño de Páginas Web Bogotá" />
       <h2>Hacer pagina servicios</h2>
   </Layout>
 )

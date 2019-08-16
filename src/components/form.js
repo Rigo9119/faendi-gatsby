@@ -10,7 +10,6 @@ const Wrapper = styled.form `
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  padding-right: 2%;
   width: 50%;
 `;
 
