@@ -17,17 +17,17 @@ const Content = styled.div`
 `;
 
 const TitleH1 = styled.h1`
-    color: #008A83;
-    letter-spacing: 1px;
-    max-width: 900px;
-    font-size: 3rem;
+  color: #008A83;
+  letter-spacing: 1px;
+  max-width: 900px;
+  font-size: 3rem;
 `;
 
 const TitleH2 = styled.h2`
-    color: #008A83;
-    letter-spacing: 1px;
-    max-width: 900px;
-    font-size: 3rem;
+  color: #008A83;
+  letter-spacing: 1px;
+  max-width: 900px;
+  font-size: 3rem;
 `;
 
 const SubTitle = styled.h3`
