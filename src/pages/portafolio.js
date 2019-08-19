@@ -6,8 +6,12 @@ import SEO from "../components/seo"
 
 const NosotrosPage = (props) => (
   <Layout>
-    <SEO title="Faendi" />
-      <h2>Hacer pagina portafolio</h2>
+    <SEO 
+      title="Faendi"
+      description="Descripción portafolio"
+      keywords="diseño web bogota"
+    />
+    <h2>Hacer pagina portafolio</h2>
   </Layout>
 )
 

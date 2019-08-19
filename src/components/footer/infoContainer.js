@@ -28,7 +28,7 @@ const Phone = styled.p`
 
 const InfoContainer = ({title, email, phone}) => (
   <Wrapper>
-    <StyledLink to="/contact/">{title}</StyledLink>
+    <StyledLink to="/contacto/">{title}</StyledLink>
     <Email>{email}</Email>
     <Phone>{phone}</Phone>
   </Wrapper>
