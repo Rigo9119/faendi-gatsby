@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 const NosotrosPage = (props) => (
   <Layout>
     <SEO title="Empresa de Diseño Web y Marketing Digital" />
-      <Content />
+    <Content />
   </Layout>
 )
 
