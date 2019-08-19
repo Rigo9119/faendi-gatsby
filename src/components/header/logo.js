@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "gatsby-link";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -16,7 +17,9 @@ const Img = styled.img`
 
 const Logo = ({src}) => (
   <Wrapper>
-    <Img src={src}/>
+    <Link to="/">
+      <Img src={src}/>
+    </Link>
   </Wrapper>
 );
 
