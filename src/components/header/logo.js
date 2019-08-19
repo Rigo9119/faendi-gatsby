@@ -18,7 +18,7 @@ const Img = styled.img`
 const Logo = ({src}) => (
   <Wrapper>
     <Link to="/">
-      <Img src={src}/>
+      <Img src={src} alt={"Logo Faendi"}/>
     </Link>
   </Wrapper>
 );

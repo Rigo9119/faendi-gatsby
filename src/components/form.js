@@ -14,7 +14,7 @@ const Wrapper = styled.form `
 `;
 
 // hacer refactor del nav  - componente aparte 
-const Form = ({}) => (
+const Form = () => (
   <Wrapper>
     <Input
       name={'name'} 
