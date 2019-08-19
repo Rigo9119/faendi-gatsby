@@ -17,7 +17,11 @@ const Wrapper = styled.div`
 
 const ContactoPage = (props) => (
   <Layout>
-    <SEO title="Faendi" />
+    <SEO 
+      title="Cotización Páginas Web y Servicios de Marketing" 
+      description="Cuéntanos acerca de las necesidades de tu negocio. Escríbenos y realiza la cotización de páginas web y servicios de marketing según tus requerimientos."
+      keywords="cotizacion, pagina, web"
+    />
       <Wrapper>
         <Content
           h_two = {'CONTÁCTANOS'}

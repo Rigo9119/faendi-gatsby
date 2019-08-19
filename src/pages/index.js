@@ -6,7 +6,11 @@ import SEO from "../components/seo"
 
 const IndexPage = (props) => (
   <Layout>
-    <SEO title="Agencia Digital Bogotá" />
+    <SEO 
+      title="Agencia Digital Bogotá" 
+      description="Somos una empresa de desarrollo web y marketing digital enfocada en resultados. Queremos potenciar tu negocio. ¡Entra ya!"
+      keywords="empresa de diseño web"
+    />
     <Hero 
       title_h1={'TRANSFORMA TU NEGOCIO Y DIGITALIZA TU EMPRESA'}
       subtitle={'Un nuevo aliado para ayudarte en el proceso de transformación digital'}
