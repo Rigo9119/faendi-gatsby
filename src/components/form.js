@@ -11,6 +11,9 @@ const Wrapper = styled.form `
   justify-content: center;
   align-items: center;
   width: 50%;
+  @media (max-width: 320px) {
+    width: 90%;
+  }
 `;
 
 // hacer refactor del nav  - componente aparte 

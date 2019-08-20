@@ -14,6 +14,11 @@ const Content = styled.div`
   left: 20%;
   width: 60%;
   z-index: 1;
+  @media (max-width: 320px) {
+    top: 45%;
+    left: 8%;
+    width: 90%;
+  }
 `;
 
 const TitleH1 = styled.h1`
@@ -21,6 +26,9 @@ const TitleH1 = styled.h1`
   letter-spacing: 1px;
   max-width: 900px;
   font-size: 3rem;
+  @media (max-width: 320px) {
+    font-size: 2rem;
+  }
 `;
 
 const TitleH2 = styled.h2`
@@ -28,18 +36,27 @@ const TitleH2 = styled.h2`
   letter-spacing: 1px;
   max-width: 900px;
   font-size: 3rem;
+  @media (max-width: 320px) {
+    font-size: 2rem;
+  }
 `;
 
 const SubTitle = styled.h3`
   color: #818181;
   font-size: 2rem;
   margin: 20px 0;
+  @media (max-width: 320px) {
+    font-size: 1rem;
+  }
 `;
 
 const Description = styled.p`
   color: #b0b0b0;
   font-size: 1.2rem;
   margin: 30px 0;
+  @media (max-width: 320px) {
+    font-size: 1rem;
+  }
 `;
 
 const StyledLink = styled(Link)`

@@ -6,7 +6,10 @@ import HeroContent from "./hero/heroContent";
 const Wrapper = styled.div`
   height: 100vh;
   position: relative;
-  width: 100vw; 
+  width: 100vw;
+  @media (max-width: 320px) {
+    height: 120vh;
+  }
 `;
 
 

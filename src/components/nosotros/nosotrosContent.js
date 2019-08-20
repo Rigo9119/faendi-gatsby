@@ -11,6 +11,10 @@ const Content = styled.div`
   left: 20%;
   width: 60%;
   z-index: 1;
+  @media (max-width: 320px) {
+    left: 8%;
+    width: 90%;
+  }
 `;
 
 const Title = styled.h1`
@@ -18,6 +22,10 @@ const Title = styled.h1`
   letter-spacing: 1px;
   max-width: 900px;
   font-size: 3rem;
+  @media (max-width: 320px) {
+    font-size: 2rem;
+    width: 80%;
+  }
 `;
 
 const SubTitle = styled.h3`

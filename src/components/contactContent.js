@@ -6,7 +6,13 @@ const Wrapper = styled.div`
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 50vw;
+  @media (max-width: 320px) and (min-width: 425px) {
+    width: 75vw;
+  }
+  @media (max-width: 600px) {
+    width: 75vw;
+  }
 `;
 
 const H1 = styled.h1`
@@ -14,6 +20,9 @@ const H1 = styled.h1`
   font-size: 3rem;
   padding-bottom: 2% ;
   text-align: center;
+  @media (max-width: 320px) and (max-width: 600px) {
+    font-size: 2rem
+  }
 `;
 
 const H3 = styled.h2`
@@ -22,12 +31,20 @@ const H3 = styled.h2`
   padding: 1%;
   text-align: left;
   width: 90%;
+  @media (max-width: 320px) {
+    padding-top: 5%;
+    width: 100%;
+  }
 `;
 
 const P = styled.p`
   color: #b0b0b0;
   padding: 1%;
   width: 90%;
+  @media (max-width: 320px) {
+    padding-top: 5%;
+    width: 100%;
+  }
 `;
 
 const A = styled.a`
@@ -35,6 +52,10 @@ const A = styled.a`
   letter-spacing: 2px;
   padding: 1%;
   text-align: center;
+  @media (max-width: 320px) {
+    padding-top: 5%;
+    width: 100%;
+  }
 `;
 
 const Content = ({h_two, h_three, p_one, p_two, anchor}) => (
