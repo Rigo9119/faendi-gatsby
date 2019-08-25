@@ -11,6 +11,14 @@ const Content = styled.div`
   left: 20%;
   width: 60%;
   z-index: 1;
+  @media (max-width: 425px) {
+    top: 45%;
+    left: 8%;
+    width: 90%;
+  }
+  @media (max-width: 320px) {
+    top: 50%;
+  }
 `;
 
 const Title = styled.h1`
@@ -18,18 +26,28 @@ const Title = styled.h1`
   letter-spacing: 1px;
   max-width: 900px;
   font-size: 3rem;
+  @media (max-width: 425px) {
+    font-size: 2rem;
+    width: 80%;
+  }
 `;
 
 const SubTitle = styled.h3`
   color: #818181;
   font-size: 1rem;
   margin: 20px 0;
+  @media (max-width: 425px) {
+    padding-right: 10%;
+  }
 `;
 
 const Paragraph = styled.p`
   color: #b0b0b0;
   font-size: 1rem;
   margin: 20px 0;
+  @media (max-width: 425px) {
+    padding-right: 10%;
+  }
 `;
 
 const NosotrosContent = ({title, subtitle, p_one, p_two, p_three, p_four}) => (

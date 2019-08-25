@@ -5,6 +5,10 @@ import styled from "styled-components";
 const Wrapper = styled.footer`
   color: #FFF;
   padding: 3% 0;
+
+  @media (max-width: 320px) {
+    padding: 0;
+  }
 `;
 
 const StyledLink = styled(Link)`
@@ -19,11 +23,19 @@ const StyledLink = styled(Link)`
 const Email = styled.p`
   margin-top: 15px;
   font-size: 1rem;
+
+  @media (max-width: 320px) {
+    margin-top: 5px;
+  }
 `;
 
 const Phone = styled.p`
   margin-top: 15px;
   font-size: 1rem;
+
+  @media (max-width: 320px) {
+    margin-top: 15px;
+  }
 `;
 
 const InfoContainer = ({title, email, phone}) => (

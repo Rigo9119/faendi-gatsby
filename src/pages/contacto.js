@@ -13,6 +13,9 @@ const Wrapper = styled.div`
   align-items: center;
   height: 100vh;
   width: 100vw;
+  @media (max-width: 320px) {
+    height: 200vh;
+  }
 `;
 
 const ContactoPage = (props) => (

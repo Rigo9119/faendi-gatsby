@@ -35,13 +35,13 @@ const IndexPage = (props) => (
       }
       nav
       link_one={'Diseño de Páginas Web'}
-      to_one={'/servicios/'}
+      to_one={'/servicios/diseno-web'}
       link_two={'SEO - Posicionamiento en buscadores'}
-      to_two={'/servicios/'}
+      to_two={'/servicios/seo'}
       link_three={'Tienda Virtual eCommerce'}
-      to_three={'/servicios/'}
+      to_three={'/servicios/e-commerce'}
       link_four={'Infografías Digitales'}
-      to_four={'/servicios/'}
+      to_four={'/servicios/infografia-digitales'}
     />
   </Layout>
 )

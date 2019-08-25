@@ -13,7 +13,10 @@ const Wrapper = styled.footer`
   justify-content: center;
   padding: 0 3%;
   text-align: center;
-  width: 100%;
+  width: 100vw;
+  @media (max-width: 320px) {
+    padding: 5%;
+  }
 `;
 
 const Footer = ({title, email, phone, date}) => (

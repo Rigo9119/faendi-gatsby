@@ -8,6 +8,9 @@ const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  @media (max-width: 425px) {
+    flex-flow: column wrap;
+  }
 `;
 
 const NavLink = styled(Link)`
@@ -16,6 +19,10 @@ const NavLink = styled(Link)`
   color: #008A83;
   margin-top: 40px;
   width: 20%;
+  @media (max-width: 425px) {
+    margin-top: 10px;
+    width: 100%;
+  }  
 `;
 
 const Menu = ({to_one, to_two, to_three, to_four, link_one, link_two, link_three, link_four}) => (
