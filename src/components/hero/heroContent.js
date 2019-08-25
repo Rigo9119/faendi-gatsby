@@ -11,12 +11,12 @@ const Content = styled.div`
   text-align: left;
   top: 50%;
   transform: translateY(-50%);
-  left: 20%;
+  left: 15%;
   width: 60%;
   z-index: 1;
-  @media (max-width: 320px) {
+  @media (max-width: 425px) {
     top: 45%;
-    left: 8%;
+    left: 6%;
     width: 90%;
   }
 `;
@@ -26,7 +26,7 @@ const TitleH1 = styled.h1`
   letter-spacing: 1px;
   max-width: 900px;
   font-size: 3rem;
-  @media (max-width: 320px) {
+  @media (max-width: 425px) {
     font-size: 2rem;
   }
 `;
@@ -36,7 +36,7 @@ const TitleH2 = styled.h2`
   letter-spacing: 1px;
   max-width: 900px;
   font-size: 3rem;
-  @media (max-width: 320px) {
+  @media (max-width: 425px) {
     font-size: 2rem;
   }
 `;
@@ -45,7 +45,7 @@ const SubTitle = styled.h3`
   color: #818181;
   font-size: 2rem;
   margin: 20px 0;
-  @media (max-width: 320px) {
+  @media (max-width: 425px) {
     font-size: 1rem;
   }
 `;
@@ -54,7 +54,7 @@ const Description = styled.p`
   color: #b0b0b0;
   font-size: 1.2rem;
   margin: 30px 0;
-  @media (max-width: 320px) {
+  @media (max-width: 425px) {
     font-size: 1rem;
   }
 `;

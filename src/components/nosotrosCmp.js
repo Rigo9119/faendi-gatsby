@@ -7,8 +7,11 @@ const Wrapper = styled.div`
   height: 100vh;
   position: relative;
   width: 100vw;
+  @media (max-width: 425px) {
+    height: 160vh;
+  }
   @media (max-width: 320px) {
-    height: 200vh;
+    height: 220vh;
   }
 `;
 

@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  @media (max-width: 320px) {
+  @media (max-width: 425px) {
     flex-flow: column wrap;
   }
 `;
@@ -19,7 +19,7 @@ const NavLink = styled(Link)`
   color: #008A83;
   margin-top: 40px;
   width: 20%;
-  @media (max-width: 320px) {
+  @media (max-width: 425px) {
     margin-top: 10px;
     width: 100%;
   }  

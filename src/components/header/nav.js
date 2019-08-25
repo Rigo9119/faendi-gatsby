@@ -8,6 +8,9 @@ const Wrapper = styled.nav`
   justify-content: space-around;
   align-items: end;
   width: 12%;
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
 
 const StyledLink = styled(Link)`

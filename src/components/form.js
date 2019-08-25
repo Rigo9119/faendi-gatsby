@@ -11,7 +11,7 @@ const Wrapper = styled.form `
   justify-content: center;
   align-items: center;
   width: 50%;
-  @media (max-width: 320px) {
+  @media (max-width: 425px) {
     width: 90%;
   }
 `;
