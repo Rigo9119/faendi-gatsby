@@ -1,14 +1,18 @@
 import React from "react";
+// import { useState } from "react"; => onClick to toggle the menu
 import styled from "styled-components";
 
 import Nav from "./header/nav";
 import Logo from "./header/logo";
 import Hamburguer from "./header/hamburguer";
+import RespMenu from "../components/header/responsiveMenu";
 import FaendiLogo from "../images/faendi-transparent-dark.png";
 import FaendiIcon from "../images/faendi-icon.png";
+import Utils from "../components/utils/utils";
 
-const WINDOW_SIZE = window.screen.availWidth;
-const SRC_IMG = WINDOW_SIZE >= '600px' ? FaendiLogo : FaendiIcon;
+const WIDTH   = Utils.WINDOW_WIDTH,
+      TABLET  = Utils.TABLET_SIZE,
+      SRC_IMG = (WIDTH <= TABLET) ? FaendiIcon : FaendiLogo;
 
 const StyledHeader = styled.header `
   display: flex;
@@ -25,7 +29,6 @@ const StyledHeader = styled.header `
 `;
 
 const Header = () => (
-
   <StyledHeader>
     <Hamburguer />
     <Logo 
@@ -36,6 +39,12 @@ const Header = () => (
       us={'Nosotros'}
       services={'Servicios'}
       //clients={'Clientes'}
+      contact={'Contacto'}
+    />
+    <RespMenu 
+      home={'Inicio'}
+      us={'Nosotros'}
+      services={'Servicios'}
       contact={'Contacto'}
     />
   </StyledHeader>

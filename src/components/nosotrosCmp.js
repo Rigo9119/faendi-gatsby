@@ -16,7 +16,7 @@ const Wrapper = styled.div`
 `;
 
 
-const Nosotros = ({title, subtitle, description, video, link}) => {
+const Nosotros = () => {
   return (
     <Wrapper>
       <Content 

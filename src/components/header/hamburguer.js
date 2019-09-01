@@ -6,7 +6,8 @@ const Wrapper = styled.div`
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: flex-start;  
-  width: 40%;
+  width: 30%;
+  padding-top: 5px;
   @media (max-width: 425px){
     display: flex;    
   }
@@ -32,7 +33,7 @@ const Line = styled.div`
   margin: 2.5px 0;
 `;
 
-const Triangle = () => (
+const hamburguer = () => (
   <Wrapper>
     <Button>
       <Line />
@@ -43,4 +44,4 @@ const Triangle = () => (
 );
 
 
-export default Triangle;
+export default hamburguer;

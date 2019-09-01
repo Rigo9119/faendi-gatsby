@@ -14,14 +14,15 @@ const Wrapper = styled.div`
   }
 `;
 
-const StyledLink = styled.div`
+const StyledLink = styled(Link)`
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
   align-items: flex-start;
   @media (max-width: 425px){
     justify-content: flex-end;
-  align-items: flex-end;
+    align-items: flex-end;
+    padding-right: 10%;
   }
 `;
 

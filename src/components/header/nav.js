@@ -24,7 +24,7 @@ const StyledLink = styled(Link)`
 TODO 
 add the clients and services links
  */
-const Nav = ({home, us, contact, services, clients}) => (
+const Nav = ({home, us, contact, services, portafolio}) => (
     <Wrapper>
       <StyledLink to="/">
         {home}
@@ -36,8 +36,8 @@ const Nav = ({home, us, contact, services, clients}) => (
         {services}
       </StyledLink>
 {/*   
-      <StyledLink to="/clientes/">
-        {clients}
+      <StyledLink to="/portafolio/">
+        {portafolio}
       </StyledLink> 
 */}
       <StyledLink to="/contacto/">
