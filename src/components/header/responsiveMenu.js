@@ -39,7 +39,7 @@ const StyledLink = styled(Link)`
 `;
 
 const responsiveMenu = ({home, us, contact, services, portafolio, display}) => (
-  <Wrapper display={display}>
+  <Wrapper display={display ? 1 : undefined}>
     <Menu>
       <StyledLink to="/">{home}</StyledLink>
       <StyledLink to="/nosotros/">{us}</StyledLink>
