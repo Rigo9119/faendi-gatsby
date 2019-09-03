@@ -2,19 +2,19 @@ import Link from "gatsby-link";
 import React from "react";
 import styled from "styled-components";
 
-console.log(React.version);
-
 const Wrapper = styled.nav`
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: end;
   width: 12%;
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
 
 const StyledLink = styled(Link)`
   color: #008a83;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 0.8rem;
   letter-spacing: 4px;
   text-decoration: none;
@@ -24,7 +24,7 @@ const StyledLink = styled(Link)`
 TODO 
 add the clients and services links
  */
-const Nav = ({home, us, contact, services, clients}) => (
+const Nav = ({home, us, contact, services, portafolio}) => (
     <Wrapper>
       <StyledLink to="/">
         {home}
@@ -36,8 +36,8 @@ const Nav = ({home, us, contact, services, clients}) => (
         {services}
       </StyledLink>
 {/*   
-      <StyledLink to="/clientes/">
-        {clients}
+      <StyledLink to="/portafolio/">
+        {portafolio}
       </StyledLink> 
 */}
       <StyledLink to="/contacto/">

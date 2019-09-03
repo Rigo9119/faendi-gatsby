@@ -1,0 +1,24 @@
+// SCREEN SIZES   
+const DESKTOP_SIZE  = 2560;
+const L_LAPTOP_SIZE = 1440;
+const LAPTOP_SIZE   = 1024;
+const TABLET_SIZE   = 800;
+const L_PHONE_SIZE  = 425;
+const M_PHONE_SIZE  = 375;
+const S_PHONE_SIZE  = 320;
+
+// SCREEN / BROWSER WIDTH AND HEIGHT
+const WINDOW_WIDTH  = window.innerWidth;
+const WINDOW_HEIGHT = window.innerHeight;
+
+module.exports = {
+  DESKTOP_SIZE,
+  L_LAPTOP_SIZE,
+  LAPTOP_SIZE,
+  TABLET_SIZE,
+  L_PHONE_SIZE, 
+  M_PHONE_SIZE,
+  S_PHONE_SIZE, 
+  WINDOW_WIDTH,
+  WINDOW_HEIGHT,
+}; 
