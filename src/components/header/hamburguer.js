@@ -33,9 +33,9 @@ const Line = styled.div`
   margin: 2.5px 0;
 `;
 
-const hamburguer = ({onClick}) => (
+const hamburguer = () => (
   <Wrapper>
-    <Button onClick={onClick}>
+    <Button>
       <Line />
       <Line />
       <Line />

@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+// import { useState } from "react"; => onClick to toggle the menu
 import styled from "styled-components";
 
 import Nav from "./header/nav";
@@ -27,34 +28,26 @@ const StyledHeader = styled.header `
   }
 `;
 
-const Header = () =>{ 
-
-  const [display, setDisplay] = useState(false)
-
-  return (
-    <StyledHeader>
-      <Hamburguer onClick={() => {
-        setDisplay(!display);
-      }}/>
-      <Logo 
-        src={SRC_IMG}
-      />
-      <Nav 
-        home={'Home'}
-        us={'Nosotros'}
-        services={'Servicios'}
-        //clients={'Clientes'}
-        contact={'Contacto'}
-      />
-      <RespMenu 
-        home={'Inicio'}
-        us={'Nosotros'}
-        services={'Servicios'}
-        contact={'Contacto'}
-        display={display} 
-      />
-    </StyledHeader>
-  )
-}
+const Header = () => (
+  <StyledHeader>
+    <Hamburguer />
+    <Logo 
+      src={SRC_IMG}
+    />
+    <Nav 
+      home={'Home'}
+      us={'Nosotros'}
+      services={'Servicios'}
+      //clients={'Clientes'}
+      contact={'Contacto'}
+    />
+    <RespMenu 
+      home={'Inicio'}
+      us={'Nosotros'}
+      services={'Servicios'}
+      contact={'Contacto'}
+    />
+  </StyledHeader>
+)
 
 export default Header;

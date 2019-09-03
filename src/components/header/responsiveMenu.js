@@ -3,7 +3,7 @@ import Link from "gatsby-link";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  background-color: #000;
+  background-color: #FFF;
   display: none;
   flex-flow: row wrap;
   justify-content: center;
@@ -12,9 +12,14 @@ const Wrapper = styled.div`
   margin-top: 10px;
   width: 100vw;
   @media (max-width: 425px){
-    display: ${props => props.display ? 'flex' : 'none' };    
+    display: flex;    
   }
 `;
+    {/*
+      when we click the hamburguer menu
+      it shoul toggle the display property 
+      display: ${props.open === true ? flex : none}
+    */}
 
 const Menu = styled.nav`
   display: none;
@@ -38,8 +43,8 @@ const StyledLink = styled(Link)`
   text-decoration: none;
 `;
 
-const responsiveMenu = ({home, us, contact, services, portafolio, display}) => (
-  <Wrapper display={display}>
+const responsiveMenu = ({home, us, contact, services, portafolio}) => (
+  <Wrapper>
     <Menu>
       <StyledLink to="/">{home}</StyledLink>
       <StyledLink to="/nosotros/">{us}</StyledLink>
