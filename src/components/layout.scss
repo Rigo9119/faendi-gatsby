@@ -1,0 +1,172 @@
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.button--green {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #3b8070;
+  color: #3b8070;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+
+.button--green:hover {
+  color: #fff;
+  background-color: #3b8070;
+}
+
+.button--grey {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #35495e;
+  color: #35495e;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-left: 15px;
+}
+
+.button--grey:hover {
+  color: #fff;
+  background-color: #35495e;
+}
+
+
+
+
+
+
+
+
+
+//TODO Export to components
+// 1. Breakpoints
+$bp-mobile: 300px;
+$bp-tablet: 600px;
+$bp-desktop: 1000px;
+$bp-large-desktop: 1440px;
+
+$bps: (
+  'mobile': $bp-mobile,
+  'tablet': $bp-tablet,
+  'desktop': $bp-desktop,
+  'large-desktop': $bp-large-desktop
+);
+
+//MIXIN BREAKPOINTS
+// 1. upto breakpoint
+@mixin upto($media) {
+  $max-width-bp: (map-get($bps, $media) or $media) - 1;
+
+  @media only screen and (max-width: $max-width-bp) {
+    @content;
+  }
+}
+
+// 2. from breakpoint
+@mixin from($media) {
+  $min-width-bp: (map-get($bps, $media) or $media);
+
+  @media only screen and (min-width: $min-width-bp) {
+    @content;
+  }
+}
+
+
+//MIXIN REM
+/**
+ * Rem-converter mixin to convert px to rem
+ */
+@mixin rem($pxValue, $property: "font-size", $standard-size: 16) {
+  #{$property}: $pxValue + px;
+  #{$property}: $pxValue/$standard-size + rem;
+}
+
+
+//COLORS
+
+$black: #000;
+$shark-gray: #818181;
+$white: #FFF;
+$primary:  #008A83;
+$light-gray: #b0b0b0;
+$bright-primary: #11dfff;
+
+.headline {
+  font-family: 'Roboto';
+  color: $shark-gray;
+  font-weight: 400;
+  margin: 20px 0;
+
+  &--1 {
+    color: $black;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+
+    @include from(tablet) {
+      @include rem(50);
+    }
+
+    @include from(desktop) {
+      @include rem(60);
+    }
+  }
+
+  &--2 {
+    @include rem(24);
+
+  @include from(tablet) {
+      @include rem(29);
+    }
+
+    @include from(desktop) {
+      @include rem(34);
+    }
+  }
+
+  &--3 {
+    @include rem(20);
+
+    @include from(tablet) {
+      @include rem(30);
+    }
+
+    @include from(desktop) {
+      @include rem(50);
+    }    
+  }
+
+  &--4 {
+    @include rem(16);
+
+    @include from(tablet) {
+      @include rem(26);
+    }
+
+    @include from(desktop) {
+      @include rem(36);
+    }  
+  }
+
+  &--light {
+    color: $white;
+  }
+}

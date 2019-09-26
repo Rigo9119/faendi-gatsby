@@ -11,7 +11,7 @@ const Content = styled.div`
   text-align: left;
   top: 50%;
   transform: translateY(-50%);
-  left: 15%;
+  left: 22%;
   width: 60%;
   z-index: 1;
   @media (max-width: 425px) {
